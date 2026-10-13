@@ -1,0 +1,885 @@
+/* =========================
+   RESET DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf2;
+    color: #4b2e1f;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    width: 100%;
+    min-height: 80px;
+    background-color: #fffaf2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #8b451f;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b2e1f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #a85d2a;
+}
+
+
+/* =========================
+   HERO / BERANDA
+========================= */
+
+.hero {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 7%;
+    background-color: #f8ead7;
+    gap: 40px;
+}
+
+.hero-text {
+    width: 48%;
+}
+
+.subjudul {
+    color: #a85d2a;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    color: #7b3f18;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #9a5728;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8b451f;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #6f3415;
+}
+
+
+/* =========================
+   GAMBAR HERO
+========================= */
+
+.hero-image {
+    width: 48%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+/* =========================
+   KEUNGGULAN
+========================= */
+
+.keunggulan {
+    padding: 60px 7%;
+    text-align: center;
+    background-color: #fffaf2;
+}
+
+.keunggulan h2 {
+    font-size: 32px;
+    color: #7b3f18;
+    margin-bottom: 40px;
+}
+
+.keunggulan-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 30%;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #8b451f;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #665247;
+}
+
+
+/* =========================
+   HALAMAN PRODUK
+========================= */
+
+.judul-halaman {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.judul-halaman h1 {
+    font-size: 38px;
+    color: #7b3f18;
+    margin-bottom: 10px;
+}
+
+.judul-halaman p {
+    color: #665247;
+    font-size: 17px;
+}
+
+
+/* =========================
+   DAFTAR PRODUK
+========================= */
+
+/* =========================
+   PRODUK
+========================= */
+
+.produk {
+    padding: 30px 7% 70px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.produk-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* KOTAK FOTO */
+.produk-gambar {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8ead7;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* FOTO */
+.produk-gambar img {
+    width: 100px !important;
+    height: 90px !important;
+    max-width: 100px !important;
+    max-height: 90px !important;
+    min-width: 0 !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+/* NAMA */
+.produk-card h2 {
+    color: #7b3f18;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* DESKRIPSI */
+.produk-card p {
+    color: #665247;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* HARGA */
+.produk-card h3 {
+    color: #a85d2a;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   TENTANG KAMI
+========================= */
+
+.tentang {
+    min-height: 500px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: #f8ead7;
+}
+
+.tentang-text {
+    width: 55%;
+}
+
+.tentang-text h1 {
+    font-size: 42px;
+    color: #7b3f18;
+    margin-bottom: 25px;
+}
+
+.tentang-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #665247;
+    margin-bottom: 15px;
+}
+
+.tentang-box {
+    width: 35%;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.roti-icon {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.tentang-box h2 {
+    color: #7b3f18;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.tentang-box p {
+    color: #a85d2a;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   VISI & MISI
+========================= */
+
+.visi-misi {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.visi-misi > h2 {
+    font-size: 32px;
+    color: #7b3f18;
+    margin-bottom: 35px;
+}
+
+.visi-misi-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.visi,
+.misi {
+    width: 40%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.visi h3,
+.misi h3 {
+    color: #8b451f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.visi p,
+.misi p {
+    color: #665247;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HALAMAN PROMO
+========================= */
+
+.promo-header {
+    text-align: center;
+    padding: 65px 20px 45px;
+    background-color: #f8ead7;
+}
+
+.promo-header h1 {
+    font-size: 42px;
+    color: #7b3f18;
+    margin-bottom: 15px;
+}
+
+.promo-header > p:last-child {
+    color: #665247;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CARD PROMO
+========================= */
+
+.promo-container {
+    padding: 50px 7% 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.promo-card {
+    background-color: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-icon {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8ead7;
+    font-size: 75px;
+}
+
+.promo-content {
+    padding: 30px 25px;
+}
+
+.label-promo {
+    display: inline-block;
+    background-color: #f2c078;
+    color: #6f3415;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.promo-content h2 {
+    color: #7b3f18;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.promo-content p {
+    color: #665247;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.promo-info {
+    margin-bottom: 20px;
+    color: #a85d2a;
+    font-size: 18px;
+}
+
+
+/* =========================
+   CATATAN PROMO
+========================= */
+
+.promo-note {
+    margin: 0 7% 60px;
+    padding: 30px;
+    background-color: #fff;
+    border-left: 5px solid #a85d2a;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.promo-note h2 {
+    color: #7b3f18;
+    margin-bottom: 10px;
+}
+
+.promo-note p {
+    color: #665247;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #6f341f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .produk {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promo-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .tentang {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tentang-text,
+    .tentang-box {
+        width: 100%;
+    }
+
+    .visi-misi-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visi,
+    .misi {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .produk {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-container {
+        grid-template-columns: 1fr;
+    }
+
+    .keunggulan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* =========================
+   HALAMAN PESAN
+========================= */
+
+.pesan-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #f8ead7;
+}
+
+.pesan-header h1 {
+    font-size: 42px;
+    color: #7b3f18;
+    margin-bottom: 15px;
+}
+
+.pesan-header > p:last-child {
+    color: #665247;
+    font-size: 17px;
+}
+
+
+/* =========================
+   FORM PESANAN
+========================= */
+
+.pesan-section {
+    padding: 60px 7%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.pesan-form {
+    width: 60%;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #7b3f18;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #dfc8b0;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #fffaf2;
+    color: #4b2e1f;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #a85d2a;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.pesan-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* =========================
+   INFORMASI PESAN
+========================= */
+
+.pesan-info {
+    width: 35%;
+    background-color: #f8ead7;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.pesan-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.pesan-info h2 {
+    color: #7b3f18;
+    margin-bottom: 15px;
+}
+
+.pesan-info > p {
+    color: #665247;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.langkah {
+    text-align: left;
+}
+
+.langkah div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.langkah strong {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8b451f;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.langkah span {
+    color: #665247;
+}
+
+
+/* =========================
+   RESPONSIVE PESAN
+========================= */
+
+@media (max-width: 800px) {
+
+    .pesan-section {
+        flex-direction: column;
+    }
+
+    .pesan-form,
+    .pesan-info {
+        width: 100%;
+    }
+}
+
+/* =========================
+   HALAMAN KONTAK
+========================= */
+
+.kontak-header {
+    text-align: center;
+    padding: 60px 20px 45px;
+    background-color: #f8ead7;
+}
+
+.kontak-header h1 {
+    font-size: 42px;
+    color: #7b3f18;
+    margin-bottom: 15px;
+}
+
+.kontak-header > p:last-child {
+    color: #665247;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CARD KONTAK
+========================= */
+
+.kontak-section {
+    padding: 60px 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.kontak-card {
+    background-color: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.kontak-card h2 {
+    color: #7b3f18;
+    margin-bottom: 12px;
+}
+
+.kontak-card p {
+    color: #665247;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.kontak-kecil {
+    display: block;
+    color: #8b6d5c;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   JAM OPERASIONAL
+========================= */
+
+.jam-operasional {
+    padding: 20px 7% 70px;
+    text-align: center;
+}
+
+.jam-operasional h2 {
+    color: #7b3f18;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.jam-box {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f8ead7;
+    padding: 25px 35px;
+    border-radius: 18px;
+}
+
+.jam-box p {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #dfc8b0;
+    color: #665247;
+}
+
+.jam-box p:last-child {
+    border-bottom: none;
+}
+
+.jam-box strong {
+    color: #7b3f18;
+}
+
+
+/* =========================
+   RESPONSIVE KONTAK
+========================= */
+
+@media (max-width: 800px) {
+
+    .kontak-section {
+        grid-template-columns: 1fr;
+    }
+
+    .jam-box {
+        padding: 20px;
+    }
+
+    .jam-box p {
+        flex-direction: column;
+        gap: 5px;
+    }
+}  
+
+
+
+
+
+.bread-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bread-icon img {
+    width: 180px !important;
+    height: 150px !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+}
+
+
